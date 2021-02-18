@@ -7,7 +7,7 @@ const port = 80
 app.use(express.static(path.join(__dirname, '/public')));
 app.get("/crypto", async(req,res)=>{
 let coin=req.query.coin;
-coin=coin.substring(1,4);
+coin=coin.replace(/[^a-zA-Z]+/g, '');
 console.log(coin.length);
 let value=await query_coinmarket(coin);
 console.log(value);
