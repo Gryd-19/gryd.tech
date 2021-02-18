@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/Gryd-19/gryd.tech#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "vhost": "^3.0.2"
+    "express": "^4.17.1"
   }
 }
