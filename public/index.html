@@ -4,11 +4,22 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="update.js"></script>
 </head>
 
 <body>
     <h1>Gideon</h1>
-    
+    <form id="inputDiv" onsubmit="run(); return false">
+        <input id="input" name="input" type="text">
+    </form>
+    <div id="output"></div>
+    <script>
+        function run(){
+            let output=document.getElementById("output");
+            update(output);
+        }
+        
+    </script>
 </body>
 
 </html>

@@ -4,6 +4,27 @@ body{
 }
 h1{
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     color:white;
+}
+
+input{
+width: 25vw;
+height: 4vh;
+font-size: 1.5vw;
+background-color: #161616;
+color: white;
+text-shadow: 3px 3px 2px #000000;
+border: 0.1em solid #ffffff;
+border-radius: 0.12em;
+}
+#inputDiv{
+    text-align:center;
+}
+#output{
+text-align: center;
+color:white;
+text-shadow: 3px 3px 2px #000000;
+margin-top: 2vh;
+font-size: 1.7vw;
 }
