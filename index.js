@@ -24,6 +24,7 @@ app.get("/ip-simple",async(req,res)=>{
 app.get("/ip",async(req,res)=>{
   let ip= requestIp.getClientIp(req).split(':').pop();
   let data=await query_ipinfo(ip);
+  data.data.value=true;
   res.json(data.data);
 });
 
