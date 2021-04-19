@@ -16,13 +16,14 @@ app.get("/crypto", async(req,res)=>{
   res.json({value:value,coin:coin});
 });
 
-app.get("/ip",async(req,res)=>{
-   let ip= requestIp.getClientIp(req);
-    res.json({'ip':ip});
+app.get("/ip-simple",async(req,res)=>{
+   let ip= requestIp.getClientIp(req).split(':').pop();
+   res.json({'ip':ip});
 });
 
-app.get("/ipinfo",async(req,res)=>{
-  let data=await query_ipinfo("8.8.8.8");
+app.get("/ip",async(req,res)=>{
+  let ip= requestIp.getClientIp(req).split(':').pop();
+  let data=await query_ipinfo(ip);
   res.json(data.data);
 });
 
