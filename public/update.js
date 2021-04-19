@@ -48,13 +48,13 @@ async function  update(){
                         if(data.postal)res+="<br><span style=\"color:#7EF9FF\">Postal Code</span>:"+data.postal;
                         if(data.timezone)res+="<br><span style=\"color:#7EF9FF\">Timezone</span>:"+data.timezone;
                     }
-                    else if(query.value="h")
+                    else if(query.value=="h")
                     {
                         res="<span style=\"color:#7EF9FF\">IP</span>:"+data.ip+"\n";
                         if(data.hostname)res+="<br><span style=\"color:#7EF9FF\">Hostname</span>:"+data.hostname;
                         if(data.org)res+="<br><span style=\"color:#7EF9FF\">ISP</span>:"+data.org;
                     }
-                    else if(query.value="l")
+                    else if(query.value=="l")
                     {
                         res="<span style=\"color:#7EF9FF\">IP</span>:"+data.ip+"\n"; 
                         if(data.city)res+="<br><span style=\"color:#7EF9FF\">City</span>:"+data.city;
